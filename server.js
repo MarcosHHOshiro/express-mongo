@@ -1,11 +1,7 @@
-const PORT = 3000;
+import "dotenv/config";
 import app from "./src/app.js";
 
-const rotas = {
-  "/": "Curso de Express API",
-  "/livros": "Entrei na rota livros",
-  "/autores": "Entrei na rota autores"
-};
+const PORT = 3000;
 
 app.listen(PORT, () => {
   console.log("servidor escutando!");
